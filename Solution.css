@@ -1,0 +1,82 @@
+.div__images > img {
+  object-fit: contain;
+  width: 420px;
+  height: 300px;
+
+  /* margin: 0px 50px; */
+}
+body {
+  background: linear-gradient(to bottom, rgb(2, 2, 58), lightgray);
+}
+.div__images {
+  background: linear-gradient(to bottom, rgb(15, 2, 51), rgb(251, 247, 253));
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+  padding: 2rem;
+  border-radius: 1rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.div__button {
+  display: flex;
+  padding: 1rem 2rem;
+  text-align: center;
+  align-items: center;
+}
+.div__button > button {
+  margin: 0rem 1rem;
+  display: inline-block;
+  font-size: 1.3rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  background-color: black;
+  transition: all 1.5s;
+}
+.div__button > button:hover {
+  color: black;
+  background-color: white;
+}
+.div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.div > h1 {
+  color: whitesmoke;
+}
+.div__image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 420px;
+  height: 330px;
+  background: linear-gradient(to bottom, rgb(38, 15, 121), rgb(178, 151, 229));
+  border-radius: 3rem;
+  transition: all 0.5s;
+}
+.div__image > h3 {
+  color: whitesmoke;
+}
+.div__image img {
+  display: block;
+  width: 420px;
+  height: 280px;
+  border-radius: 1rem;
+  object-fit: cover;
+}
+.div__image:hover {
+  transform: scale(1.06);
+}
+.div__imageDetails {
+  display: flex;
+}
+.div__imageDetails > h3,
+h4 {
+  color: white;
+}
+.div__imageDetails > h4 {
+  margin-left: 30px;
+}

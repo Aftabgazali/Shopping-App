@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="Solution.css"></link>
+    <title>Document</title>
+  </head>
+  <body onload="runOnce()">
+    <div>
+      <div class="div">
+        <h1>
+          Dynamic Shopping App
+        </h1>
+        <div class="div__button">
+          <button style="text-align: center" onclick="runBtn()">
+            Jewellery 
+          </button>
+          <button style="text-align: center" onclick="runBtn2()">
+            Cooking
+          </button>
+          <button style="text-align: center" onclick="runBtn1()">
+            Clothes
+          </button>
+          <button style="text-align: center" onclick="runBtn3()">
+            Cakes
+          </button>
+        </div>
+      </div>
+      <div class="div__images">
+        <div class="div__image">
+          <img  name="img"  src="j1.jpg" />
+          <div class="div__imageDetails">
+            <h3 id="h1">Ring</h3>
+            <h4>Price <span id="p1">100</span> $</h4>
+            </div>
+        </div>
+        <div class="div__image">
+          <img name="img1"  src="j2.jpg" />
+          <div class="div__imageDetails">
+            <h3 id="h2">Ear Ring</h3>
+            <h4>Price <span id="p2">50</span> $</h4>
+            </div>
+        </div>
+        <div class="div__image">
+          <img name="img2"  src="j3.jpg"/>
+          <div class="div__imageDetails">
+          <h3 id="h3">Diamond</h3>
+          <h4>Price <span id="p3">200</span> $</h4>
+          </div>
+        </div>
+        <div class="div__image">
+          <img name="img3"  src="j4.jpg"/>
+          <div class="div__imageDetails">
+            <h3 id="h4">Diamond Ring</h3>
+            <h4>Price <span id="p4">400</span> $</h4>
+            </div>
+        </div>
+        <div class="div__image">
+          <img name="img4"  src="j5.jpg"/>
+          <div class="div__imageDetails">
+            <h3 id="h5">Pearl Ring</h3>
+            <h4>Price <span id="p5">500</span> $</h4>
+            </div>
+        </div>
+        
+      </div>
+      <script>
+        var jewellery = new Array(4);
+        var clothes = new Array(4);
+        var cooking = new Array(4);
+        var cakes=new Array(4);
+        var i = 0;
+        function runOnce() {
+          jewellery[0] = new Image();
+          jewellery[0].src = "j1.jpg";
+          jewellery[1] = new Image();
+          jewellery[1].src = "j2.jpg";
+          jewellery[2] = new Image();
+          jewellery[2].src = "j3.jpg";
+          jewellery[3] = new Image();
+          jewellery[3].src = "j4.jpg";
+          jewellery[4] = new Image();
+          jewellery[4].src = "j5.jpg";
+
+          clothes[0] = new Image();
+          clothes[0].src = "c1.jpg";
+          clothes[1] = new Image();
+          clothes[1].src = "c2.jpg";
+          clothes[2] = new Image();
+          clothes[2].src = "c3.jpg";
+          clothes[3] = new Image();
+          clothes[3].src = "c4.jpg";
+          clothes[4] = new Image();
+          clothes[4].src = "c5.jpg";
+
+          cooking[0] = new Image();
+          cooking[0].src = "f1.jpg";
+          cooking[1] = new Image();
+          cooking[1].src = "f2.jpg";
+          cooking[2] = new Image();
+          cooking[2].src = "f3.jpg";
+          cooking[3] = new Image();
+          cooking[3].src = "f4.jpg";
+          cooking[4] = new Image();
+          cooking[4].src = "f5.jpg";
+
+          cakes[0] = new Image();
+          cakes[0].src = "ck1.jpg";
+          cakes[1] = new Image();
+          cakes[1].src = "ck2.jpg";
+          cakes[2] = new Image();
+          cakes[2].src = "ck3.jpg";
+          cakes[3] = new Image();
+          cakes[3].src = "ck4.jpg";
+          cakes[4] = new Image();
+          cakes[4].src = "ck5.jpg";
+        }
+        function runBtn() {
+          document.img.src = jewellery[0].src;
+          document.getElementById('h1').innerHTML="Ring"
+          document.getElementById('p1').innerHTML="100"
+          document.img1.src = jewellery[1].src;
+          document.getElementById('h2').innerHTML="Ear Ring"
+          document.getElementById('p2').innerHTML="50"
+          document.img2.src = jewellery[2].src;
+          document.getElementById('h3').innerHTML="Daimond"
+          document.getElementById('p3').innerHTML="200"
+          document.img3.src = jewellery[3].src;
+          document.getElementById('h4').innerHTML="Daimond Ring"
+          document.getElementById('p4').innerHTML="400"
+          document.img4.src = jewellery[4].src;
+          document.getElementById('h5').innerHTML="Pearl"
+          document.getElementById('p5').innerHTML="500"
+        }
+        function runBtn1() {
+          document.img.src = clothes[0].src;
+          document.getElementById('h1').innerHTML="Shirts"
+          document.getElementById('p1').innerHTML="80"
+          document.img1.src = clothes[1].src;
+          document.getElementById('h2').innerHTML="Women long shirts"
+          document.getElementById('p2').innerHTML="90"
+          document.img2.src = clothes[2].src;
+          document.getElementById('h3').innerHTML="Bundle of Men's Shirts"
+          document.getElementById('p3').innerHTML="500"
+          document.img3.src = clothes[3].src;
+          document.getElementById('h4').innerHTML="Winter wear"
+          document.getElementById('p4').innerHTML="800"
+          document.img4.src =  clothes[4].src;
+          document.getElementById('h5').innerHTML="Warm hats"
+          document.getElementById('p5').innerHTML="300"
+        }
+        function runBtn2() {
+          document.img.src = cooking[0].src;
+          document.getElementById('h1').innerHTML="Cooking tools"
+          document.getElementById('p1').innerHTML="600"
+          document.img1.src = cooking[1].src;
+          document.getElementById('h2').innerHTML="Mini Kitchen tools"
+          document.getElementById('p2').innerHTML="400"
+          document.img2.src = cooking[2].src;
+          document.getElementById('h3').innerHTML="Kitchen tools"
+          document.getElementById('p3').innerHTML="450"
+          document.img3.src = cooking[3].src;
+          document.getElementById('h4').innerHTML="Food Ingrediants"
+          document.getElementById('p4').innerHTML="250"
+          document.img4.src = cooking[4].src;
+          document.getElementById('h5').innerHTML="Complete Kitchen Set"
+          document.getElementById('p5').innerHTML="1000"
+        }
+        function runBtn3() {
+          document.img.src = cakes[0].src;
+          document.getElementById('h1').innerHTML="Chocolate Pastry"
+          document.getElementById('p1').innerHTML="100"
+          document.img1.src = cakes[1].src;
+          document.getElementById('h2').innerHTML="Vanilla Pastry"
+          document.getElementById('p2').innerHTML="100"
+          document.img2.src = cakes[2].src;
+          document.getElementById('h3').innerHTML="Strawberry Pastry"
+          document.getElementById('p3').innerHTML="120"
+          document.img3.src = cakes[3].src;
+          document.getElementById('h4').innerHTML="Chocolate Cake"
+          document.getElementById('p4').innerHTML="500"
+          document.img4.src = cakes[4].src;
+          document.getElementById('h5').innerHTML="Dutch Chocolate Cake"
+          document.getElementById('p5').innerHTML="600"
+        }
+        
+      </script>
+    </div>
+  </body>
+</html>
